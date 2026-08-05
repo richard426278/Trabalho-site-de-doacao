@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lar de Quatro Patas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Lar de Quatro Patas</h1>
+    <h2>Encontre um amigo para a vida toda.</h2>
+
+    <p>
+        Cada adoção transforma duas vidas: a de quem encontra um lar e a de quem abre o coração.
+    </p>
+
+    <section>
+        <h2>Quem Somos</h2>
+
+        <p>
+            Somos uma organização dedicada ao resgate e à adoção responsável de cães e gatos.
+            Nosso objetivo é oferecer uma segunda chance para animais que precisam de carinho,
+            proteção e um lar cheio de amor.
+        </p>
+    </section>
+
+    <section>
+        <h2>Animais Disponíveis</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="alemao.png" alt="Cachorro" class="card-img">
+                <h3 class="card-name">Adolpho</h3>
+                <p class="card-description"><strong>Raça:</strong> Spitz alemão <br><strong>Idade:</strong> 2 anos
+                    <br><strong>Gênero:</strong> Masculino<br> • Muito amostradinho
+                </p>
+                <a href="#" class="card-button" onclick="escolherAnimal('adolpho')">Adotar!!</a>
+            </div>
+            <div class="card">
+                <img src="frajola.png" alt="Gato" class="card-img">
+                <h3 class="card-name">Fiona</h3>
+                <p class="card-description"><strong>Raça:</strong> Gato Tuxedo <br> <strong>Idade:</strong> 1 ano
+                    <br><strong>Gênero:</strong> Feminino<br> • Muito Carinhosa
+                </p>
+                <a href="#" class="card-button" onclick="escolherAnimal('fiona')">Adotar!!</a>
+            </div>
+            <div class="card">
+                <img src="peludo.png" alt="Cachorro" class="card-img">
+                <h3 class="card-name">Berenice</h3>
+                <p class="card-description"><strong>Raça:</strong> Shih Tzu <br> <strong>Idade:</strong> 3 anos
+                    <br><strong>Gênero:</strong> Feminino<br> • Muito docil
+                </p>
+                <a href="#" class="card-button" onclick="escolherAnimal('berenice')">Adotar!!</a>
+            </div>
+            <div class="card">
+                <img src="furão.jpg" alt="Cachorro" class="card-img">
+                <h3 class="card-name">Antônio</h3>
+                <p class="card-description"><strong>Raça:</strong> Furão doméstico <br> <strong>Idade:</strong> 1 ano
+                    <br><strong>Gênero:</strong> Masculino<br> • Muito brincalhão
+                </p>
+                <a href="#" class="card-button" onclick="escolherAnimal('antônio')">Adotar!!</a>
+            </div>
+            <div class="card">
+                <img src="rosimara.jpg" alt="Cachorro" class="card-img">
+                <h3 class="card-name">Rosimara</h3>
+                <p class="card-description"><strong>Raça:</strong> Jabuti Piranga <br> <strong>Idade:</strong> 5 anos
+                    <br><strong>Gênero:</strong> Feminino<br> • Muito gentil
+                </p>
+                <a href="#" class="card-button" onclick="escolherAnimal('rosimara')">Adotar!!</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Como Funciona a Adoção</h2>
+
+        <ol>
+            <li>Escolha um animal.</li>
+            <li>Preencha o formulário.</li>
+            <li>Converse com nossa equipe.</li>
+            <li>Leve seu novo melhor amigo para casa.</li>
+        </ol>
+    </section>
+
+    <h2>Formulário de Adoção</h2>
+
+    <form>
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" required>
+
+        <br><br>
+
+        <label for="animal">Animal escolhido:</label><br>
+        <input type="text" id="animal" readonly>
+
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <input type="submit" value="Enviar Pedido">
+    </form>
+
+
+
+    <footer>
+        <p>© 2026 Lar de Quatro Patas - Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function escolherAnimal(nome) {
+            document.getElementById("animal").value = nome;
+        }
+    </script>
+
+</body>
+
+</html>
